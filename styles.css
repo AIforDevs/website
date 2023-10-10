@@ -94,7 +94,6 @@ main {
 
 .social-icons .icon {
     font-size: 24px;
-    color: #FF6F61;
     margin: 0 15px;
     transition: transform 0.3s ease;
 }
@@ -102,3 +101,4 @@ main {
 .social-icons .icon:hover {
     transform: scale(1.2);
 }
+

@@ -28,4 +28,4 @@ cd AIforDevs-LandingPage
 git checkout -b your-feature-branch
 ```
 4. Make changes.
-5. create pull request.
+5. Create a pull request.

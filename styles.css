@@ -67,6 +67,10 @@ main {
     flex-wrap: wrap;
 }
 
+.feature:hover {
+    transform: scale(1.05); /* Scale the element to 105% of its original size on hover */
+}
+
 .feature {
     flex: 1;
     max-width: 300px;

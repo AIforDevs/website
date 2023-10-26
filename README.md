@@ -14,9 +14,18 @@ We welcome contributions from everyone. Here are a few ways you can help:
 
 ## Getting Started
 
-To get started, clone the repository to your local machine and start making your changes. Don't forget to create a new branch for your feature or bug fix.
+1. To get started, clone the repository to your local machine.
 
 ```bash
 git clone https://github.com/your-organization/AIforDevs-LandingPage.git
+```
+2. Go into AIforDevs-LandingPage folder.
+```bash
 cd AIforDevs-LandingPage
+```
+3. Create a new branch for your feature or bug fix.
+```bash
 git checkout -b your-feature-branch
+```
+4. Make changes.
+5. Create a pull request.

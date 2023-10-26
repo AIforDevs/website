@@ -67,6 +67,10 @@ main {
     flex-wrap: wrap;
 }
 
+.feature:hover {
+    transform: scale(1.05); /* Scale the element to 105% of its original size on hover */
+}
+
 .feature {
     flex: 1;
     max-width: 300px;
@@ -75,6 +79,7 @@ main {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease;
 }
 
 .feature i {

@@ -11,19 +11,19 @@ async function fetchNewsData() {
     if (data.articles) {
       const newsDiv = document.getElementById("newsDiv");
       const tutorialDiv = document.getElementById("tutorialDiv");
+
       // Create and display the news articles
       data.articles.forEach((article) => {
         const articleDiv = document.createElement("div");
+        const imageDiv = document.createElement("div");
+        console.log(article);
         articleDiv.innerHTML = `
                     <h2>${article.title}</h2>
                     <p>${article.description}</p>
                     <a href="${article.url}" target="_blank">Read more</a>
                 `;
+
         newsDiv.appendChild(articleDiv);
-        const video = document.createElement("video");
-        video.src = "${article.url}";
-        video.poster = "${article.urlToImage}";
-        tutorialDiv.appendChild(video);
       });
     } else {
       console.error("Unable to fetch news data.");
@@ -35,3 +35,31 @@ async function fetchNewsData() {
 
 // Call the fetchNewsData function when the page loads
 fetchNewsData();
+setInterval(() => {
+  fetchTutorialData()
+}, 3000);
+
+async function fetchTutorialData() {
+  try {
+    const response = await fetch(`${apiUrl}&apiKey=${apiKey}`);
+    const data = await response.json();
+
+    if (data.articles) {
+    
+      const tutorialDiv = document.getElementById("tutorialDiv");
+
+      // Create and display the news articles
+      data.articles.forEach((article) => {
+        const imageDiv = document.createElement("div");
+        if (article.urlToImage)
+          imageDiv.innerHTML = `<img src=${article.urlToImage} alt=${article.title}/>
+                                  <h6>${article.title}</h6>`;
+        tutorialDiv.appendChild(imageDiv);
+      });
+    } else {
+      console.error("Unable to fetch news data.");
+    }
+  } catch (error) {
+    console.error("An error occurred while fetching article data:", error);
+  }
+}

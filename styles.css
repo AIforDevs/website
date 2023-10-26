@@ -3,26 +3,15 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #00C9FF, #92FE9D);
-    color: var(--text-color);
+    color: #333;
     overflow-x: hidden;
 }
 
 header {
-    background: var(--background-color);
-    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
     text-align: center;
     padding: 40px 0;
-}
-
-#btn {
-    font-size: 2rem;
-    padding: 2rem;
-}
-
-
-.branding{
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .branding h1 {
@@ -40,7 +29,7 @@ main {
 }
 
 .hero {
-    background: var(--background-color);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 40px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -50,7 +39,7 @@ main {
 .hero-content h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: #333;
 }
 
 .hero-content {
@@ -87,7 +76,7 @@ main {
     max-width: 300px;
     margin: 20px;
     padding: 30px;
-    background: var(--background-color);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.25s ease;
@@ -104,7 +93,7 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: var(--background-color);
+    background: rgba(255, 255, 255, 0.9);
     border-top: 1px solid #ccc;
 }
 
@@ -116,15 +105,5 @@ main {
 
 .social-icons .icon:hover {
     transform: scale(1.2);
-}
-
-:root {
-    --text-color : #333;
-    --background-color : #fff;
-}
-
-.dark-mode {
-    --text-color : #fff;
-    --background-color : #333;
 }
 

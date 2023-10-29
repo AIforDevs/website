@@ -1,4 +1,4 @@
-const apiKey = "daf526a9e0a7456e91441a6436ddbc50"; // Replace with your News API key
+const apiKey = "6972d7a298f843c0870391a76ddf5d55"; 
 const apiUrl =
   "https://newsapi.org/v2/top-headlines?country=in&category=technology";
 

@@ -67,8 +67,19 @@ main {
     transition: background-color 0.3s ease;
     margin-top: 20px; /* Add margin to the top of the button */
 }
+.cta-button-2{
+    font-size: 1.2em;
+    padding: 15px 35px;
+    background-color: #FF6F61;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to the top of the button */
+}
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button-2:hover {
     background-color: #FFCC5C;
 }
 
@@ -126,5 +137,18 @@ main {
 .dark-mode {
     --text-color : #fff;
     --background-color : #333;
+}
+
+
+/* -----cta-button media query for spacing ----*/
+
+@media (max-width: 470px){
+    .cta-button{
+        margin-top: 1rem;
+        line-height: 3;
+    }
+    .cta-button-2{
+        line-height: 4;
+    }
 }
 

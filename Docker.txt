@@ -1,0 +1,11 @@
+For running Docker image of AIFordevs follow simple instructions below :
+
+First go to the directory and run command docker build -t aifordevs . this will build local image for you and now run following commands 
+
+Docker Image Name : aifordevs 
+Docker Image Command : docker run -it -p 8000:8000 aifordevs 
+
+Steps : 
+1. Install and download docker desktop in your OS .
+2. Create Account on DockerHub and keep docker desktop running 
+3. After open vs code and run give command docker run -it -p 8000:8000 aifordevs
